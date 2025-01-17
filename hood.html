@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Autoparts</title>
+    <link rel="icon" href="img/logoC.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <!--font awsm cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/hood.css">
+</head>
+
+<body>
+    <!--header section-->
+
+    <div class="header">
+        <div class="header-nav">
+            <img class="logo" src="img/logoC.png" alt="">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li>
+                    <a href="#carpart">Car Part <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-nav">
+                        <ul>
+                            <li><a href="engine.html">Engine</a></li>
+                            <li><a href="transmission.html">Transmission</a></li>
+                            <li><a href="automotive_engine.html">Automotive Engine</a></li>
+                            <li><a href="spareparts.html">Spare Parts</a></li>
+                            <li><a href="lightingparts.html">Lighting Parts</a></li>
+                            <li><a href="bumper.html">Bumper</a></li>
+                            <li><a href="hood.html">Hood</a></li>
+                            <li><a href="pickupbed.html">Pickup Bed</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#policy.html">Policy <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-nav">
+                        <ul>
+                            <li><a href="privacypolicy.html">privacy policy</a></li>
+                            <li><a href="warrantypolicy.html">warranty policy</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.menu > li > a').forEach(item => {
+            item.addEventListener('click', function (event) {
+                const dropdown = this.nextElementSibling;
+                if (dropdown) {
+                    event.preventDefault(); // Prevent default link behavior
+                    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+                }
+            });
+        });
+
+        // Close dropdown if clicked outside
+        window.addEventListener('click', function (event) {
+            if (!event.target.matches('.menu > li > a')) {
+                document.querySelectorAll('.dropdown-nav').forEach(dropdown => {
+                    dropdown.style.display = 'none';
+                });
+            }
+        });
+    </script>
+
+
+    <div class="container_hood">
+        <div class="text">
+            <h1 style="font-size: 40px;">Hood</h1><br> <br>
+            <p>A car hood, also known as a bonnet in some regions, is an interchangeable part that covers the engine
+                compartment of a vehicle. It is kept in inventory and used for the repair or replacement of damaged or
+                defective hoods. Car hoods are an essential feature of automotive design and engineering, <br> often
+                comprising dedicated hood management systems in automotive supply chains.</p>
+            <p>Car hoods are a result of advancements in automotive manufacturing and design, contributing to both the
+                aesthetics and functionality of vehicles.</p>
+            <p>In an automotive context, car hoods are described in several ways to distinguish key features such as
+                material, design, and functionality. The following describes different types of car hoods and their
+                typical functions.</p>
+
+        </div>
+        <div class="image">
+            <img src="img/hood-1.png" alt="Hood" width="500">
+        </div>
+    </div>
+
+
+
+
+    <!--footer-->
+    <div class="container_footer">
+        <div class="payment">
+            <h2>
+                We accept all credit card Payment via secured link.
+            </h2>
+            <p>
+                <img alt="Secure Payments Icon" height="20"
+                    src="https://storage.googleapis.com/a1aa/image/CWBFxPFZdibtGhuWoPwXtuufrocXdjIIPrt5lj2f9HpcQ0BUA.jpg"
+                    width="20" />
+                Secure Payments Powered by Stripe
+            </p>
+            <p>
+                <img alt="Visa Logo" height="20"
+                    src="https://storage.googleapis.com/a1aa/image/mWTbtEPnNS4fESBessCNvmEQhDSJc9UWkO3TAIHWZZDlQ0BUA.jpg"
+                    width="40" />
+                <img alt="MasterCard Logo" height="20"
+                    src="https://storage.googleapis.com/a1aa/image/SXR5J2VDgioHIpJdvLW9u6D0t98bucZLNF5Mg9tYfjlQI6AKA.jpg"
+                    width="40" />
+                <img alt="American Express Logo" height="20"
+                    src="https://storage.googleapis.com/a1aa/image/XarKdhkEy0IgJBWphECo7q4rpX27YEaiD3kZ0EYQxLuHEdAF.jpg"
+                    width="40" />
+                <img alt="Discover Logo" height="20"
+                    src="https://storage.googleapis.com/a1aa/image/pEeEc9RQIwVDfUJHjJiIFSWUclJtEtoIDY3jKwe4M3eNCRHQB.jpg"
+                    width="40" />
+                <img alt="Diners Club Logo" height="20"
+                    src="https://storage.googleapis.com/a1aa/image/vHkDlvMPgV4FCJni68fKgxRmxSqRjDOUr71YHXXRazFQI6AKA.jpg"
+                    width="40" />
+            </p>
+            <p class="email">
+                <i class="fas fa-envelope">
+                </i>
+                Info@superiorautopartsinc.com
+            </p>
+        </div>
+        <div class="contact">
+            <h2>
+                Contact
+            </h2>
+            <p class="phone">
+                <i class="fas fa-phone">
+                </i>
+                Toll Free +1 (321) 405-5506
+            </p>
+            <p class="address">
+                <i class="fas fa-map-marker-alt">
+                </i>
+                <span>
+                    2716 Maverick Ave
+                    <br />
+                    Dallas, TX 75228
+                </span>
+            </p>
+        </div>
+    </div>
+    <div class="footer">
+        © 2023. All rights reserved. superiorautopartsinc.com
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!---js link-->
+    <script src="js/script.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

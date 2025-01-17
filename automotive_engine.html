@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoparts</title>
+    <link rel="icon" href="img/logoC.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/automotive.css">
+</head>
+
+<body>
+
+    <!--header section-->
+
+    <div class="header">
+        <div class="header-nav">
+            <img class="logo" src="img/logoC.png" alt="">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li>
+                    <a href="#carpart">Car Part <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-nav">
+                        <ul>
+                            <li><a href="engine.html">Engine</a></li>
+                            <li><a href="transmission.html">Transmission</a></li>
+                            <li><a href="automotive_engine.html">Automotive Engine</a></li>
+                            <li><a href="spareparts.html">Spare Parts</a></li>
+                            <li><a href="lightingparts.html">Lighting Parts</a></li>
+                            <li><a href="bumper.html">Bumper</a></li>
+                            <li><a href="hood.html">Hood</a></li>
+                            <li><a href="pickupbed.html">Pickup Bed</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#policy.html">Policy <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-nav">
+                        <ul>
+                            <li><a href="privacypolicy.html">privacy policy</a></li>
+                            <li><a href="warrantypolicy.html">warranty policy</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.menu > li > a').forEach(item => {
+            item.addEventListener('click', function (event) {
+                const dropdown = this.nextElementSibling;
+                if (dropdown) {
+                    event.preventDefault(); // Prevent default link behavior
+                    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+                }
+            });
+        });
+
+        // Close dropdown if clicked outside
+        window.addEventListener('click', function (event) {
+            if (!event.target.matches('.menu > li > a')) {
+                document.querySelectorAll('.dropdown-nav').forEach(dropdown => {
+                    dropdown.style.display = 'none';
+                });
+            }
+        });
+    </script>
+    <div class="container_automotive">
+        <div class="text">
+            <h1>Automotive Engine</h1><br> <br>
+            <p>We are here to help you find used car engines, including used Ford engines or any other type of used
+                engine you may need. Through our trusted network of resellers, we can connect you with high-quality used
+                car engines at competitive prices.</p>
+            <p>Before investing your money in an engine, it’s essential to conduct thorough research. Keep reading to
+                learn everything you need to know about finding used engines for sale and securing the best deal
+                possible for your engine replacement.</p>
+            <p>The first step is determining the exact type of engine you require. While this might initially seem
+                challenging, it becomes much easier once you gather accurate details. Below are some key pieces of
+                information you should have before starting your search for used car engines.</p>
+            <p>Rest assured, we’re always ready to assist you in finding the perfect engine to power your vehicle.</p>
+        </div>
+        <div class="image">
+            <img src="img/automotive_engine.png" alt="Automotive Engine" width="500">
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>About Us</h3>
+            <p>
+              We are a dedicated team providing excellent web solutions. Our focus is on creating innovative and user-friendly designs.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutus.html">About US</a></li>
+              <li><a href="privacypolicy.html">Privacy Policy</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <p>Email: info@example.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Web Street, Design City</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Classic Cruiser Creation LLC. All rights reserved.</p>
+        </div>
+      </footer>
+    
+  
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!---js link-->
+<script src="js/script.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<!-- Font Awesome Icons (Optional) -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

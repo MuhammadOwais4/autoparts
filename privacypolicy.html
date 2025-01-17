@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Autoparts</title>
+<link rel="icon" href="img/logoC.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<!--font awsm cdn link-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/privacy.css">
+</head>
+<body>
+     <!--header section-->
+    
+     <div class="header">
+        <div class="header-nav">
+            <img class="logo" src="img/logoC.png" alt="">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li>
+                    <a href="#carpart">Car Part <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-nav">
+                        <ul>
+                            <li><a href="engine.html">Engine</a></li>
+                            <li><a href="transmission.html">Transmission</a></li>
+                            <li><a href="automotive_engine.html">Automotive Engine</a></li>
+                            <li><a href="spareparts.html">Spare Parts</a></li>
+                            <li><a href="lightingparts.html">Lighting Parts</a></li>
+                            <li><a href="bumper.html">Bumper</a></li>
+                            <li><a href="hood.html">Hood</a></li>
+                            <li><a href="pickupbed.html">Pickup Bed</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#policy.html">Policy <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-nav">
+                        <ul>
+                            <li><a href="privacypolicy.html">privacy policy</a></li>
+                            <li><a href="warrantypolicy.html">warranty policy</a></li>
+                            
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.menu > li > a').forEach(item => {
+    item.addEventListener('click', function(event) {
+        const dropdown = this.nextElementSibling;
+        if (dropdown) {
+            event.preventDefault(); // Prevent default link behavior
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        }
+    });
+});
+
+// Close dropdown if clicked outside
+window.addEventListener('click', function(event) {
+    if (!event.target.matches('.menu > li > a')) {
+        document.querySelectorAll('.dropdown-nav').forEach(dropdown => {
+            dropdown.style.display = 'none';
+        });
+    }
+});
+    </script>
+    <div class="policy-container">
+        <h1>PRIVACY POLICY</h1>
+<p>
+    <strong>Elite Auto Supplies</strong> ensures that your personal information is handled securely when you make transactions on our website.
+    We are committed to maintaining your trust by protecting your information and not sharing, selling, or renting it to third parties, except
+    as described in this Privacy Statement.
+</p>
+<p>
+    We work with trusted payment processing services for all online transactions and collaborate with shipping providers to fulfill and deliver
+    orders. Only essential information is shared with these services to complete the transaction and delivery process. Your personal data will
+    not be shared with any unauthorized third parties. Occasionally, Elite Auto Supplies may send updates and important announcements to the
+    contact information you have provided.
+</p>
+
+<h2>SHIPPING POLICY</h2>
+<h3>Order Confirmation</h3>
+<p>
+    Once an order is placed, you will receive an order confirmation email to your registered address. This confirms that we have received your
+    order and pre-authorized payment. After this, we will check inventory availability with our suppliers. Orders are typically shipped within
+    10 to 15 business days. However, delays caused by shipping carriers or external factors are beyond our control. Orders can only be canceled
+    or refunded if the shipment is not delivered within 20 days of placing the order.
+</p>
+
+<h3>Damages</h3>
+<p>
+    Upon delivery, please inspect the packaging and contents of your item(s). If you notice any damages, report them immediately and document
+    the damage with photos. Contact us with this evidence to process a refund or replacement. Refer to our Refund Policy for further details.
+</p>
+
+<h2>RETURN POLICY</h2>
+<p>
+    If the wrong or damaged part is delivered, notify us right away. PLEASE DO NOT RETURN ITEMS WITHOUT A RETURN AUTHORIZATION LABEL. Returns
+    must be initiated within 5 business days of receiving the product. Instructions for returning the item and the appropriate address will be
+    provided during this process. Returns sent without proper authorization will not be processed.
+</p>
+<p>
+    For defective items, we will attempt to send a replacement first. If a replacement cannot be provided, a full refund will be issued once
+    the item is returned to us. Refunds will not include shipping charges unless the issue was caused by us. Items returned after the warranty
+    period or due to customer error (e.g., ordering the wrong part) may be subject to a restocking fee of 20% and deducted shipping costs.
+</p>
+<p>
+    Please confirm the correct part before placing an order. Refunds for items returned after 30 days from the delivery date will not be
+    processed. For any further details, contact our support team.
+</p>
+    </div>
+
+
+
+
+
+
+        <!--footer-->
+        <footer class="footer">
+            <div class="footer-container">
+              <div class="footer-column">
+                <h3>About Us</h3>
+                <p>
+                  We are a dedicated team providing excellent web solutions. Our focus is on creating innovative and user-friendly designs.
+                </p>
+              </div>
+              <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="aboutus.html">About US</a></li>
+                  <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="footer-column">
+                <h3>Contact</h3>
+                <p>Email: info@example.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: 123 Web Street, Design City</p>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p>&copy; 2025 Classic Cruiser Creation LLC. All rights reserved.</p>
+            </div>
+          </footer>
+        
+      
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!---js link-->
+    <script src="js/script.js"></script>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <!-- Font Awesome Icons (Optional) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

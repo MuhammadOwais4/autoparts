@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto parts</title>
+    <link rel="icon" href="img/logoC.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <!--font awsm cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--header section-->
+
+    <div class="header">
+        <div class="header-nav">
+            <img class="logo" src="img/logoC.png" alt="">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li>
+                    <a href="#carpart">Car Part <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-nav">
+                        <ul>
+                            <li><a href="engine.html">Engine</a></li>
+                            <li><a href="transmission.html">Transmission</a></li>
+                            <li><a href="automotive_engine.html">Automotive Engine</a></li>
+                            <li><a href="spareparts.html">Spare Parts</a></li>
+                            <li><a href="lightingparts.html">Lighting Parts</a></li>
+                            <li><a href="bumper.html">Bumper</a></li>
+                            <li><a href="hood.html">Hood</a></li>
+                            <li><a href="pickupbed.html">Pickup Bed</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#policy.html">Policy <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-nav">
+                        <ul>
+                            <li><a href="privacypolicy.html">privacy policy</a></li>
+                            <li><a href="warrantypolicy.html">warranty policy</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.menu > li > a').forEach(item => {
+            item.addEventListener('click', function (event) {
+                const dropdown = this.nextElementSibling;
+                if (dropdown) {
+                    event.preventDefault(); // Prevent default link behavior
+                    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+                }
+            });
+        });
+
+        // Close dropdown if clicked outside
+        window.addEventListener('click', function (event) {
+            if (!event.target.matches('.menu > li > a')) {
+                document.querySelectorAll('.dropdown-nav').forEach(dropdown => {
+                    dropdown.style.display = 'none';
+                });
+            }
+        });
+    </script>
+
+
+
+
+    <div class="container_transmission">
+
+        <h1 style="justify-content: flex-start;">Transmission</h1>
+
+        <h2>USED TRANSMISSION</h2>
+
+
+        <ul>
+            <li><strong>Compatibility:</strong>
+                <ul>
+                    <li>Ensure the transmission you select is designed for your vehicle's specific make, model, and
+                        year. <br> It must align with the required specifications, such as the number of gears,
+                        transmission type <br> (automatic or manual), and drive configuration (front-wheel drive,
+                        rear-wheel drive, or all-wheel drive).</li>
+                </ul>
+            </li>
+            <li><strong>Mileage:</strong>
+                <ul>
+                    <li>Request the mileage details of the used transmission from the seller. Ideally, opt for one <br>
+                        with lower mileage, as this often translates to better performance and a longer operational
+                        lifespan.</li>
+                </ul>
+            </li>
+            <li><strong>Condition:</strong>
+                <ul>
+                    <li>Confirm that the used transmission is in good working condition, free from major mechanical
+                        faults <br> or damages. A thorough inspection is recommended to ensure all components—such as
+                        gears, clutches, <br> and valves—are functioning correctly.</li>
+                </ul>
+            </li>
+            <li><strong>Accessory Compatibility:</strong>
+                <ul>
+                    <li>Ensure the transmission is compatible with the vehicle’s existing components, including the
+                        engine, <br> drivetrain, and electrical systems.</li>
+                </ul>
+            </li>
+            <li><strong>Warranty:</strong>
+                <ul>
+                    <li>Warranty terms for used transmissions vary by seller or supplier. Inquire about any available
+                        warranty <br> coverage or guarantees to protect your purchase.</li>
+                </ul>
+            </li>
+            <li><strong>Pricing:</strong>
+                <ul>
+                    <li>The price of the used transmission should reflect its condition, mileage, and market value. <br>
+                        Compare prices from multiple sellers to ensure you’re getting a reasonable deal.</li>
+                </ul>
+            </li>
+            <li><strong>Seller Reputation:</strong>
+                <ul>
+                    <li>Research the seller’s credibility by reviewing customer feedback and ratings. <br> A reputable
+                        seller is more likely to provide a reliable product and good service.</li>
+                </ul>
+            </li>
+            <li><strong>Return Policy:</strong>
+                <ul>
+                    <li>Ask about the seller’s return policy in case the transmission doesn’t meet your expectations
+                        <br> or if any undisclosed problems arise.</li>
+                </ul>
+            </li>
+        </ul>
+        <h2>New Transmission</h2>
+        <ul>
+            <li><strong>Warranty:</strong>
+                <ul>
+                    <li>New transmissions typically include a warranty from the manufacturer, offering reassurance <br>
+                        against defects or potential issues.</li>
+                </ul>
+            </li>
+            <li><strong>Performance:</strong>
+                <ul>
+                    <li>New transmissions are expected to deliver optimal performance and higher reliability compared to
+                        used ones.</li>
+                </ul>
+            </li>
+            <li><strong>Installation:</strong>
+                <ul>
+                    <li>Factor in the cost and expertise required for installation, as new transmissions often require
+                        professional <br> installation to function correctly.</li>
+                </ul>
+            </li>
+            <li><strong>Cost:</strong>
+                <ul>
+                    <li>New transmissions are generally more expensive than used options. Plan your budget accordingly,
+                        <br> considering the long-term benefits of investing in a new unit.</li>
+                </ul>
+            </li>
+            <li><strong>Availability:</strong>
+                <ul>
+                    <li>Check the availability of the required transmission model, as some units may have limited stock
+                        or longer delivery times.</li>
+                </ul>
+            </li>
+        </ul>
+        <img style="width: 200px; height: 150px; margin-left: 1000px;" src="img/transmission.png" alt="">
+
+
+
+        <!--footer-->
+        <footer class="footer">
+            <div class="footer-container">
+              <div class="footer-column">
+                <h3>About Us</h3>
+                <p>
+                  We are a dedicated team providing excellent web solutions. Our focus is on creating innovative and user-friendly designs.
+                </p>
+              </div>
+              <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="aboutus.html">About US</a></li>
+                  <li><a href="privacypolicy.html">Privacy Policy</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+              <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-instagram"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="footer-column">
+                <h3>Contact</h3>
+                <p>Email: info@example.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: 123 Web Street, Design City</p>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p>&copy; 2025 Classic Cruiser Creation LLC. All rights reserved.</p>
+            </div>
+          </footer>
+        
+      
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!---js link-->
+    <script src="js/script.js"></script>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <!-- Font Awesome Icons (Optional) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!---js link-->
+<script src="js/script.js"></script>
+
+</div>
+</body>
+
+</html>

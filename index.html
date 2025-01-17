@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Autoparts</title>
+    <link rel="icon" href="img/logoC.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <!--font awsm cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+
+    <body>
+
+        <!--header section-->
+
+        <div class="header">
+            <div class="header-nav">
+                <img class="logo" src="img/logoC.png" alt="">
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li>
+                        <a href="#carpart">Car Part <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-nav">
+                            <ul>
+                                <li><a href="engine.html">Engine</a></li>
+                                <li><a href="transmission.html">Transmission</a></li>
+                                <li><a href="automotive_engine.html">Automotive Engine</a></li>
+                                <li><a href="spareparts.html">Spare Parts</a></li>
+                                <li><a href="lightingparts.html">Lighting Parts</a></li>
+                                <li><a href="bumper.html">Bumper</a></li>
+                                <li><a href="hood.html">Hood</a></li>
+                                <li><a href="pickupbed.html">Pickup Bed</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#policy.html">Policy <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-nav">
+                            <ul>
+                                <li><a href="privacypolicy.html">privacy policy</a></li>
+                                <li><a href="warrantypolicy.html">warranty policy</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+
+            </div>
+        </div>
+        <script>
+            document.querySelectorAll('.menu > li > a').forEach(item => {
+                item.addEventListener('click', function (event) {
+                    const dropdown = this.nextElementSibling;
+                    if (dropdown) {
+                        event.preventDefault(); // Prevent default link behavior
+                        dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+                    }
+                });
+            });
+
+            // Close dropdown if clicked outside
+            window.addEventListener('click', function (event) {
+                if (!event.target.matches('.menu > li > a')) {
+                    document.querySelectorAll('.dropdown-nav').forEach(dropdown => {
+                        dropdown.style.display = 'none';
+                    });
+                }
+            });
+        </script>
+
+        <!---home section-->
+
+        <section class="home">
+
+            <div class="home-body">
+                <div class="box" style="background: url(img/bgcar.jpg);">
+                    <div class="content">
+                        <span><b>Toll Free +1 (321) 405-5506</b></span>
+                        <h3> We'll help you find High Quality Used Auto Parts in "A" Grade Condition </h3>
+                        <h2>We'll send a Quote to your <br>Phone Number and Email Instantly</h2>
+
+                        <button>shop Now</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            </div>
+        </section>
+
+        <!--banner section-->
+
+        <div class="banner_container">
+            <h1>Best Company</h1>
+            <h2>Why Choose Us</h2>
+            <p>Your vehicle's battery is essential for its operation. Without a fully charged <br> battery, you may find
+                yourself unable to start your car. <br> Regular maintenance and checks are crucial to ensuring your
+                battery <br> and electrical system function properly.</p>
+            <p>With over 300 service centers located nationwide, we ensure that your <br> vehicle receives prompt attention
+                and care. Our extensive network in the <br> automotive industry enables us to provide high-quality parts and
+                services at competitive prices, <br> helping you keep your vehicle running smoothly without breaking the
+                bank.</p>
+        </div>
+
+
+        <!--category section-->
+        <div class="category" id="category">
+            <h1>AUTO PARTS CATEGORY</h1>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="img/engine.png" alt="Picture 1">
+                    <a href="engine.html" class="btn">Engine</a>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/transmission.png" alt="Picture 2">
+                    <a href="transmission.html" class="btn">Transmission</a>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/automotive_engine.png" alt="Picture 3">
+                    <a href="automotive_engine.html" class="btn">automotive engine</a>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/spareparts.png" alt="Picture 4">
+                    <a href="spareparts.html" class="btn">Spare parts</a>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/lightingparts.png" alt="Picture 5">
+                    <a href="lightingparts.html" class="btn">lighting parts</a>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/bumper.png" alt="Picture 6">
+                    <a href="bumper.html" class="btn">Bumper</a>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/hood-1.png" alt="Picture 7">
+                    <a href="hood.html" class="btn">Hood</a>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/pickupbed-1.png" alt="Picture 8">
+                    <a href="pickupbed.html" class="btn">Pickup bed</a>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+
+        <!---icon section-->
+        <section class="icons-container">
+
+            <div class="icons">
+                <img src="img/icon1.png" alt="">
+                <div class="content">
+                    <h3>Free shipping</h3>
+                    <p>Free shipping on order</p>
+                </div>
+            </div>
+
+            <div class="icons">
+                <img src="img/icon3.png" alt="">
+                <div class="content">
+                    <h3>100% Money Back</h3>
+                    <p>You've 30 days to return</p>
+                </div>
+            </div>
+            <div class="icons">
+                <img src="img/icon2.png" alt="">
+                <div class="content">
+                    <h3>Secure Payment</h3>
+                    <p>100% secure payment</p>
+                </div>
+            </div>
+            <div class="icons">
+                <img src="img/icon4.jpg" alt="">
+                <div class="content">
+                    <h3>Customer support 24/7</h3>
+                    <p>Contact us anytime</p>
+                </div>
+            </div>
+
+        </section>
+        <div class="container_customers">
+            <div class="box">
+                <h1>81</h1>
+                <p>Extensive expertise</p>
+            </div>
+            <div class="box">
+                <h1>99%</h1>
+                <p>Quality Parts</p>
+            </div>
+            <div class="box">
+                <h1>5426+</h1>
+                <p>Satisfied Customers</p>
+            </div>
+            <h1 class="happy-customers">Happy Customers</h1>
+        </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>About Us</h3>
+            <p>
+              We are a dedicated team providing excellent web solutions. Our focus is on creating innovative and user-friendly designs.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutus.html">About US</a></li>
+              <li><a href="privacypolicy.html">Privacy Policy</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <p>Email: info@example.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Web Street, Design City</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Classic Cruiser Creation LLC. All rights reserved.</p>
+        </div>
+      </footer>
+    
+  
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!---js link-->
+<script src="js/script.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<!-- Font Awesome Icons (Optional) -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

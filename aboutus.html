@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoparts</title>
+    <link rel="icon" href="img/logoC.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<!--font awsm cdn link-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <!--header section-->
+
+    <div class="header">
+        <div class="header-nav">
+            <img class="logo" src="img/logoC.png" alt="">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li>
+                    <a href="#carpart">Car Part <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-nav">
+                        <ul>
+                            <li><a href="engine.html">Engine</a></li>
+                            <li><a href="transmission.html">Transmission</a></li>
+                            <li><a href="automotive_engine.html">Automotive Engine</a></li>
+                            <li><a href="spareparts.html">Spare Parts</a></li>
+                            <li><a href="lightingparts.html">Lighting Parts</a></li>
+                            <li><a href="bumper.html">Bumper</a></li>
+                            <li><a href="hood.html">Hood</a></li>
+                            <li><a href="pickupbed.html">Pickup Bed</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#policy.html">Policy <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-nav">
+                        <ul>
+                            <li><a href="privacypolicy.html">privacy policy</a></li>
+                            <li><a href="warrantypolicy.html">warranty policy</a></li>
+                            
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.menu > li > a').forEach(item => {
+    item.addEventListener('click', function(event) {
+        const dropdown = this.nextElementSibling;
+        if (dropdown) {
+            event.preventDefault(); // Prevent default link behavior
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        }
+    });
+});
+
+// Close dropdown if clicked outside
+window.addEventListener('click', function(event) {
+    if (!event.target.matches('.menu > li > a')) {
+        document.querySelectorAll('.dropdown-nav').forEach(dropdown => {
+            dropdown.style.display = 'none';
+        });
+    }
+});
+    </script>
+
+    
+    <!---about section-->
+    <div class="container_about">
+        <h1>WE ARE</h1>
+        <p>Superior Auto Parts INC is one-stop online shop for all your used auto part needs. <br> We provide quality used OEM Automobile parts and accessories. Soon as we enter <br> the market, we became one other pioneer in this industry due to our quality and fast <br> response to customer queries. We had served thousands of customers so far. Our <br> customer support and sales division
+             open to answer any of your queries. Our prices  <br> are very competitive and our goal is to provide the best parts to our customers at <br> very affordable price.</p><br><br>
+      
+        <p>We ship your order directly to your home, business or to your mechanic to help you <br> get back onto the the road as rapidly as possible. Our responsibilities extend beyond <br> business. We know values and give utmost priority in addressing our <br> customer needs.</p> <br> <br>
+      
+        <h2>Main reason why you need to go with Best Used parts are</h2>
+        <ul>
+          <li>High quality parts</li>
+          <li>Customer Friendly</li>
+          <li>On the call booking</li>
+          <li>Thousands of networked shops across USA</li>
+          <li>Minimum 3 Years Warranty</li>
+          <li>Parts will be shipped within 18 to 22 business day</li>
+        </ul>
+      </div>
+
+      <div class="container_about_card">
+        <div class="card">
+          <img src="img/girl.jpeg" alt="Request a quote">
+          <p><strong>REQUEST A QUOTE</strong></p>
+        </div>
+        <div class="card">
+          <img src="img/telephone.jpeg" alt="Get an estimate">
+          <p><strong>GET AN ESTIMATE</strong></p>
+        </div>
+        <div class="card">
+          <img src="img/shipped.jpeg" alt="Parts shipped">
+          <p><strong>PARTS SHIPPED</strong></p>
+        </div>
+      </div>
+
+
+      <div class="container_form">
+        <div class="form-section">
+            <label for="name"><b>Name*</b></label>
+            <input type="text" placeholder="Your name" name="uname" required>
+            <label for="message">Message*</label>
+            <textarea id="message" rows="4" placeholder="Enter your message" required></textarea>
+            <div class="ratings">
+                <label>Ratings*</label>
+                <label><input type="checkbox"> 1 Star</label>
+                <label><input type="checkbox"> 2 Star</label>
+                <label><input type="checkbox"> 3 Star</label>
+                <label><input type="checkbox"> 4 Star</label>
+                <label><input type="checkbox"> 5 Star</label>
+               
+                <div class="rating-summary">
+                    <div class="rating-value">4.89<span>/5</span></div>
+                    <div class="rating-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span class="verified">100% Verified</span>
+                    </div>
+                </div>
+                <div class="rating-breakdown">
+                    <div class="rating-bar">
+                        <span>5 <i class="fas fa-star"></i></span>
+                        <div class="bar">
+                            <div class="fill" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="rating-bar">
+                        <span>4 <i class="fas fa-star"></i></span>
+                        <div class="bar">
+                            <div class="fill" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                    <div class="rating-bar">
+                        <span>3 <i class="fas fa-star"></i></span>
+                        <div class="bar">
+                            <div class="fill" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                    <div class="rating-bar">
+                        <span>2 <i class="fas fa-star"></i></span>
+                        <div class="bar">
+                            <div class="fill" style="width: 20%;"></div>
+                        </div>
+                    </div>
+                    <div class="rating-bar">
+                        <span>1 <i class="fas fa-star"></i></span>
+                        <div class="bar">
+                            <div class="fill" style="width: 10%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Submit</button>
+            </div>
+    
+      
+        <div class="info-section">
+            <h1>A <span>Reputation</span> 17 Years in the Making</h1>
+            <p><strong>Superior Auto Parts INC</strong> is a trusted online retailer specializing in the sale of used car parts. With years of experience in the industry, we have built a reputation for providing top-quality parts at competitive prices. Our team of experts carefully inspects and tests each part to ensure its reliability and performance. We understand the importance of finding the right part for your vehicle, and we are committed to helping you find exactly what you need. Shop with confidence at Superior Auto Parts INC and enjoy the convenience of buying used car parts from the comfort of your own homes.</p>
+           
+            
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--footer-->
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-column">
+        <h3>About Us</h3>
+        <p>
+          We are a dedicated team providing excellent web solutions. Our focus is on creating innovative and user-friendly designs.
+        </p>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About US</a></li>
+          <li><a href="privacypolicy.html">Privacy Policy</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <p>Email: info@example.com</p>
+        <p>Phone: +123 456 7890</p>
+        <p>Address: 123 Web Street, Design City</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Classic Cruiser Creation LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!---js link-->
+<script src="js/script.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<!-- Font Awesome Icons (Optional) -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+</body>
+</html>

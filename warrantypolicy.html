@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Autoparts</title>
+    <link rel="icon" href="img/logoC.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <!--font awsm cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/warranty.css">
+</head>
+
+<body>
+    <!--header section-->
+
+    <div class="header">
+        <div class="header-nav">
+            <img class="logo" src="img/logoC.png" alt="">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li>
+                    <a href="#carpart">Car Part <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-nav">
+                        <ul>
+                            <li><a href="engine.html">Engine</a></li>
+                            <li><a href="transmission.html">Transmission</a></li>
+                            <li><a href="automotive_engine.html">Automotive Engine</a></li>
+                            <li><a href="spareparts.html">Spare Parts</a></li>
+                            <li><a href="lightingparts.html">Lighting Parts</a></li>
+                            <li><a href="bumper.html">Bumper</a></li>
+                            <li><a href="hood.html">Hood</a></li>
+                            <li><a href="pickupbed.html">Pickup Bed</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#policy.html">Policy <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown-nav">
+                        <ul>
+                            <li><a href="privacypolicy.html">privacy policy</a></li>
+                            <li><a href="warrantypolicy.html">warranty policy</a></li>
+
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.menu > li > a').forEach(item => {
+            item.addEventListener('click', function (event) {
+                const dropdown = this.nextElementSibling;
+                if (dropdown) {
+                    event.preventDefault(); // Prevent default link behavior
+                    dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+                }
+            });
+        });
+
+        // Close dropdown if clicked outside
+        window.addEventListener('click', function (event) {
+            if (!event.target.matches('.menu > li > a')) {
+                document.querySelectorAll('.dropdown-nav').forEach(dropdown => {
+                    dropdown.style.display = 'none';
+                });
+            }
+        });
+    </script>
+
+    <div class="container">
+        <h1>WARRANTY TERMS</h1>
+        <p>
+            Our warranty covers only the core engine assembly, which includes the block, heads, pistons, and other
+            internal components. External parts such as sensors, cables, electronics, and other auxiliary items are not
+            covered under the warranty but may be included with the engine for convenience.
+        </p>
+
+        <p>
+            We strive to provide high-quality engines and transmissions. However, since these are used products, their
+            appearance cannot be guaranteed. If you notice discrepancies, contact our support team at (321) 405-5506. To
+            prevent delays, please avoid declining shipments, as it complicates warranty claims.
+        </p>
+
+        <p>
+            Orders cancelled after 24 hours of purchase will incur a 30% restocking fee along with two-way shipping
+            costs if the product has already shipped. We recommend reviewing your order carefully before confirmation.
+        </p>
+
+        <p>
+            For warranty-certified returns, Superior Auto Parts INC will reimburse shipping costs. Customers must allow
+            us an opportunity to address issues with replacements. Refusing an approved replacement will be treated as a
+            cancellation, and a 30% restocking fee will apply.
+        </p>
+
+        <p>
+            Using VIN data, we ensure compatibility with your vehicle. However, minor adjustments may still be
+            necessary. In cases of proven incompatibility, our return policy covers the issue. If incorrect information
+            is provided during the order, customers are responsible for additional shipping costs and price differences.
+        </p>
+
+        <p>
+            Issues with a purchased engine must be reported within 60 days of delivery. Approved claims may result in
+            either a replacement or a full refund. Warranty claims cannot be initiated after the 60-day window.
+        </p>
+
+        <p>
+            For assistance or concerns, contact our support team promptly during the warranty period. Delaying action
+            might limit available options for resolving your issue.
+        </p>
+
+        <p>
+            Superior Auto Parts INC is committed to ensuring customer satisfaction and a smooth resolution process for
+            all claims.
+        </p>
+    </div>
+
+
+
+
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-column">
+            <h3>About Us</h3>
+            <p>
+              We are a dedicated team providing excellent web solutions. Our focus is on creating innovative and user-friendly designs.
+            </p>
+          </div>
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="aboutus.html">About US</a></li>
+              <li><a href="privacypolicy.html">Privacy Policy</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <p>Email: info@example.com</p>
+            <p>Phone: +123 456 7890</p>
+            <p>Address: 123 Web Street, Design City</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Classic Cruiser Creation LLC. All rights reserved.</p>
+        </div>
+      </footer>
+    
+  
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!---js link-->
+<script src="js/script.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<!-- Font Awesome Icons (Optional) -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

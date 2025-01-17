@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto parts</title>
+  <link rel="icon" href="img/logoC.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!--font awsm cdn link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!--header section-->
+
+  <div class="header">
+    <div class="header-nav">
+      <img class="logo" src="img/logoC.png" alt="">
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li>
+          <a href="#carpart">Car Part <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-nav">
+            <ul>
+              <li><a href="engine.html">Engine</a></li>
+              <li><a href="transmission.html">Transmission</a></li>
+              <li><a href="automotive_engine.html">Automotive Engine</a></li>
+              <li><a href="spareparts.html">Spare Parts</a></li>
+              <li><a href="lightingparts.html">Lighting Parts</a></li>
+              <li><a href="bumper.html">Bumper</a></li>
+              <li><a href="hood.html">Hood</a></li>
+              <li><a href="pickupbed.html">Pickup Bed</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#policy.html">Policy <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-nav">
+            <ul>
+              <li><a href="privacypolicy.html">privacy policy</a></li>
+              <li><a href="warrantypolicy.html">warranty policy</a></li>
+
+            </ul>
+          </div>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+
+    </div>
+  </div>
+  <script>
+    document.querySelectorAll('.menu > li > a').forEach(item => {
+      item.addEventListener('click', function (event) {
+        const dropdown = this.nextElementSibling;
+        if (dropdown) {
+          event.preventDefault(); // Prevent default link behavior
+          dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        }
+      });
+    });
+
+    // Close dropdown if clicked outside
+    window.addEventListener('click', function (event) {
+      if (!event.target.matches('.menu > li > a')) {
+        document.querySelectorAll('.dropdown-nav').forEach(dropdown => {
+          dropdown.style.display = 'none';
+        });
+      }
+    });
+  </script>
+  <div class="container_engine">
+    <img src="img/engine.png" alt="Engine Image" width="200">
+
+    <h1>Engine</h1>
+    <h2>Used Engine</h2>
+    <p> <strong>1. Compatibility:</strong> <br> A used engine must match the specific make, model, and year of the
+      vehicle. <br> It should have identical specifications, including engine displacement, cylinder <br>count, and fuel
+      type, as the original engine. </p>
+    <p> <strong>2. Mileage:</strong> <br> Sellers should disclose the mileage of the used engine. <br> Choosing an
+      engine with lower mileage is often preferable for improved durability and performance. </p>
+    <p> <strong>3. Condition:</strong> <br> The condition of the used engine should be reliable, with no major
+      mechanical faults or damage. <br> A detailed inspection is necessary to verify that all critical components are
+      functioning correctly. </p>
+    <p> <strong>4. Warranty:</strong> <br> Warranty coverage for used engines can vary by seller or supplier. <br> It is
+      essential to ask about available warranty options or guarantees. </p>
+    <p> <strong>5. Accessory Compatibility:</strong> <br> The used engine must be compatible with the vehicle’s existing
+      parts and systems, <br> including the transmission, exhaust, and electrical connections. </p>
+    <h2>Remanufactured Engine</h2>
+    <p> <strong>1. Compatibility:</strong> <br> A remanufactured engine must align with the make, model, and year of the
+      vehicle and maintain <br> the original engine’s specifications. </p>
+    <p> <strong>2. Quality Assurance:</strong> <br> These engines are rebuilt with precision to meet or exceed original
+      equipment manufacturer (OEM) <br> standards, ensuring high-quality performance. </p>
+    <p> <strong>3. Warranty:</strong> <br> Most remanufactured engines come with comprehensive warranties, offering
+      reassurance about <br>their reliability and function. </p>
+    <p> <strong>4. Performance:</strong> <br> Remanufactured engines are often restored to near-new condition,
+      delivering superior performance <br> compared to used engines with uncertain histories. </p>
+    <p> <strong>5. Cost:</strong> <br> Although remanufactured engines typically cost more than used engines, their
+      higher quality and warranty <br>often make them a better long-term investment. </p>
+
+  </div>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!---js link-->
+  <script src="js/script.js"></script>
+</body>
+
+</html
