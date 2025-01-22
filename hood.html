@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Autoparts</title>
-    <link rel="icon" href="img/logoC.png">
+    <link rel="icon" href="img/logos.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <!--font awsm cdn link-->
@@ -23,7 +23,8 @@
 
     <div class="header">
         <div class="header-nav">
-            <img class="logo" src="img/logoC.png" alt="">
+            <img style="width: 20rem; height:20rem;" class="logo" src="img/logos.png" alt="">
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
@@ -75,6 +76,10 @@
                 });
             }
         });
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+    const menu = document.querySelector(".menu");
+    menu.classList.toggle("active");
+});
     </script>
 
 
@@ -93,7 +98,7 @@
 
         </div>
         <div class="image">
-            <img src="img/hood-1.png" alt="Hood" width="500">
+            <img style="width: 40rem;"  src="img/hood-1.png" alt="Hood" width="500">
         </div>
     </div>
 
@@ -132,7 +137,7 @@
             <p class="email">
                 <i class="fas fa-envelope">
                 </i>
-                Info@superiorautopartsinc.com
+                Info@classiccruisercreation.com
             </p>
         </div>
         <div class="contact">
@@ -142,7 +147,7 @@
             <p class="phone">
                 <i class="fas fa-phone">
                 </i>
-                Toll Free +1 (321) 405-5506
+                Phone number +1 (321) 405-5506
             </p>
             <p class="address">
                 <i class="fas fa-map-marker-alt">
@@ -156,7 +161,7 @@
         </div>
     </div>
     <div class="footer">
-        © 2023. All rights reserved. superiorautopartsinc.com
+        © 2025. All rights classiccruiser.com
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Autoparts</title>
-    <link rel="icon" href="img/logoC.png">
+    <link rel="icon" href="img/logos.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
     <!--font awsm cdn link-->
@@ -24,7 +24,8 @@
 
     <div class="header">
         <div class="header-nav">
-            <img class="logo" src="img/logoC.png" alt="">
+            <img style="width: 20rem; height:20rem;" class="logo" src="img/logos.png" alt="">
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
@@ -76,6 +77,10 @@
                 });
             }
         });
+        document.getElementById("menu-toggle").addEventListener("click", function () {
+    const menu = document.querySelector(".menu");
+    menu.classList.toggle("active");
+});
     </script>
 
     <div class="container">
@@ -129,44 +134,64 @@
 
 
 
-    <!--footer-->
-    <footer class="footer">
-        <div class="footer-container">
-          <div class="footer-column">
-            <h3>About Us</h3>
+      <!--footer-->
+      <div class="container_footer">
+        <div class="payment">
+            <h2>
+                We accept all credit card Payment via secured link.
+            </h2>
             <p>
-              We are a dedicated team providing excellent web solutions. Our focus is on creating innovative and user-friendly designs.
+                <img alt="Secure Payments Icon" height="20"
+                    src="https://storage.googleapis.com/a1aa/image/CWBFxPFZdibtGhuWoPwXtuufrocXdjIIPrt5lj2f9HpcQ0BUA.jpg"
+                    width="20" />
+                Secure Payments Powered by Stripe
             </p>
-          </div>
-          <div class="footer-column">
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="aboutus.html">About US</a></li>
-              <li><a href="privacypolicy.html">Privacy Policy</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer-column">
-            <h3>Follow Us</h3>
-            <div class="social-icons">
-              <a href="#"><i class="fa fa-facebook"></i></a>
-              <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="#"><i class="fa fa-instagram"></i></a>
-              <a href="#"><i class="fa fa-linkedin"></i></a>
-            </div>
-          </div>
-          <div class="footer-column">
-            <h3>Contact</h3>
-            <p>Email: info@example.com</p>
-            <p>Phone: +123 456 7890</p>
-            <p>Address: 123 Web Street, Design City</p>
-          </div>
+            <p>
+                <img alt="Visa Logo" height="20"
+                    src="https://storage.googleapis.com/a1aa/image/mWTbtEPnNS4fESBessCNvmEQhDSJc9UWkO3TAIHWZZDlQ0BUA.jpg"
+                    width="40" />
+                <img alt="MasterCard Logo" height="20"
+                    src="https://storage.googleapis.com/a1aa/image/SXR5J2VDgioHIpJdvLW9u6D0t98bucZLNF5Mg9tYfjlQI6AKA.jpg"
+                    width="40" />
+                <img alt="American Express Logo" height="20"
+                    src="https://storage.googleapis.com/a1aa/image/XarKdhkEy0IgJBWphECo7q4rpX27YEaiD3kZ0EYQxLuHEdAF.jpg"
+                    width="40" />
+                <img alt="Discover Logo" height="20"
+                    src="https://storage.googleapis.com/a1aa/image/pEeEc9RQIwVDfUJHjJiIFSWUclJtEtoIDY3jKwe4M3eNCRHQB.jpg"
+                    width="40" />
+                <img alt="Diners Club Logo" height="20"
+                    src="https://storage.googleapis.com/a1aa/image/vHkDlvMPgV4FCJni68fKgxRmxSqRjDOUr71YHXXRazFQI6AKA.jpg"
+                    width="40" />
+            </p>
+            <p class="email">
+                <i class="fas fa-envelope">
+                </i>
+                Info@classiccruisercreation.com
+            </p>
         </div>
-        <div class="footer-bottom">
-          <p>&copy; 2025 Classic Cruiser Creation LLC. All rights reserved.</p>
+        <div class="contact">
+            <h2>
+                Contact
+            </h2>
+            <p class="phone">
+                <i class="fas fa-phone">
+                </i>
+                Phone number +1 (321) 405-5506
+            </p>
+            <p class="address">
+                <i class="fas fa-map-marker-alt">
+                </i>
+                <span>
+                    2716 Maverick Ave
+                    <br />
+                    Dallas, TX 75228
+                </span>
+            </p>
         </div>
-      </footer>
+    </div>
+    <div class="footer">
+        © 2025. All rights classiccruiser.com
+    </div>
     
   
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>

@@ -38,6 +38,7 @@ ul li {
     font-size: 2rem;
 }
 
+
 /*media query*/
 @media (max-width: 768px) {
     html {
@@ -86,21 +87,18 @@ ul li {
     }
 
     .header-nav .menu > li {
-        font-size: 1.5rem; /* Reduce menu font size */
+        font-size: 1.9rem; /* Reduce menu font size */
     }
 
     .header-nav {
         padding: 1rem;
     }
+
 }
 /* For screens larger than 1200px (default desktop styles are applied) */
 @media (min-width: 1201px) {
     /* Existing styles remain unchanged */
   }
-
-
-
-
 
 @media (max-width: 600px) {
     .container {
@@ -108,116 +106,99 @@ ul li {
     }
 
     h1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
 
     p, ul li {
-        font-size: 0.9rem;
+        font-size: 1.5rem;
+    }
+    .menu-toggle{
+        justify-content: right;
+        float: right;
     }
 }
 
-
+  
 .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 10px;
+  background-color: #222;
+  color: #ddd;
+  font-size: 14px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .container_footer {
+      flex-direction: column; /* Stack the sections on top of each other */
+      align-items: center;
+      padding: 20px 10px;
   }
-  
-  .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 0 20px;
-  }
-  
-  .footer-column {
-    flex: 1;
-    min-width: 200px;
-    margin: 10px;
-  }
-  
-  .footer-column h3 {
-    margin-bottom: 15px;
-    font-size: 2rem;
-    color: #f9a825;
-  }
-  
-  .footer-column p, .footer-column ul {
-    font-size: 1.5rem;
-    line-height: 1.6;
-  }
-  
-  .footer-column ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-column ul li {
-    margin-bottom: 10px;
-  }
-  
-  .footer-column ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .footer-column ul li a:hover {
-    color: #f9a825;
-  }
-  
-  .social-icons {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .social-icons a {
-    color: #fff;
-    font-size: 2rem;
-    transition: color 0.3s;
-  }
-  
-  .social-icons a:hover {
-    color: #f9a825;
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 1.5rem;
-    border-top: 1px solid #444;
-    padding-top: 10px;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .footer-container {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .footer-column {
+
+  .container_footer .payment, .container_footer .contact {
+      max-width: 100%; /* Allow full-width for smaller screens */
       margin-bottom: 20px;
-    }
   }
-  
-  @media (max-width: 480px) {
-    .footer-column h3 {
-      font-size: 1.3rem;
-    }
-  
-    .footer-column p, .footer-column ul {
-      font-size: 0.9rem;
-    }
-  
-    .social-icons a {
-      font-size: 1.2rem;
-    }
-  
-    .footer-bottom {
-      font-size: 0.8rem;
-    }
+
+  .container_footer h2 {
+      font-size: 16px;
   }
+
+  .container_footer p {
+      font-size: 14px;
+  }
+
+  .container_footer p img {
+      max-width: 30px; /* Reduce logo size */
+  }
+
+  .container_footer .email, .container_footer .phone, .container_footer .address {
+      font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container_footer .payment, .container_footer .contact {
+      text-align: center; /* Center the content for small screens */
+  }
+
+  .container_footer p img {
+      max-width: 25px; /* Smaller logo size for mobile */
+  }
+
+  .container_footer h2 {
+      font-size: 14px;
+  }
+
+  .container_footer p {
+      font-size: 12px;
+  }
+
+  .footer {
+      font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container_footer {
+      flex-direction: column;
+      align-items: center;
+      padding: 15px 10px;
+  }
+
+  .container_footer .payment, .container_footer .contact {
+      max-width: 100%;
+  }
+
+  .container_footer h2 {
+      font-size: 14px;
+  }
+
+  .container_footer p {
+      font-size: 12px;
+  }
+
+  .footer {
+      font-size: 10px;
+  }
+}
